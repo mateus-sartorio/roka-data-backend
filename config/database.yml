@@ -81,10 +81,6 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  encoding: utf8
-  database: <%= ENV["RDS_DB_NAME"] %>
-  username: <%= ENV["RDS_DB_USERNAME"] %>
-  password: <%= ENV["RDS_DB_PASSWORD"] %>
-  host: <%= ENV["RDS_HOSTNAME"] %>
-  port: <%= ENV["RDS_PORT"] %>
+  database: app_production
+  username: app
+  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
