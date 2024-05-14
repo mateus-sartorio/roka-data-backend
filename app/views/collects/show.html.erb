@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @collect %>
+
+<div>
+  <%= link_to "Edit this collect", edit_collect_path(@collect) %> |
+  <%= link_to "Back to collects", collects_path %>
+
+  <%= button_to "Destroy this collect", @collect, method: :delete %>
+</div>

@@ -5,29 +5,31 @@ one:
   situation: 1
   roka_id: 1
   has_plaque: false
-  registration_year: 1
+  registration_date: 2024-05-14 19:38:50
   address: MyString
   reference_point: MyString
-  lives_in_JN: false
+  lives_in_jn: false
   phone: MyString
   is_on_whatsapp_group: false
-  birthdate: 2024-02-18
+  birthdate: 2024-05-14 19:38:50
   profession: MyString
   residents_in_the_house: 1
   observations: MyString
+  needs_collect_on_the_house: false
 
 two:
   name: MyString
   situation: 1
   roka_id: 1
   has_plaque: false
-  registration_year: 1
+  registration_date: 2024-05-14 19:38:50
   address: MyString
   reference_point: MyString
-  lives_in_JN: false
+  lives_in_jn: false
   phone: MyString
   is_on_whatsapp_group: false
-  birthdate: 2024-02-18
+  birthdate: 2024-05-14 19:38:50
   profession: MyString
   residents_in_the_house: 1
   observations: MyString
+  needs_collect_on_the_house: false

@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_30_010256) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_18_151427) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "collects", force: :cascade do |t|
-    t.date "collected_on"
-    t.decimal "ammount"
     t.bigint "resident_id", null: false
+    t.datetime "collected_on"
+    t.decimal "ammount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["resident_id"], name: "index_collects_on_resident_id"
@@ -46,19 +46,19 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_30_010256) do
     t.integer "situation"
     t.integer "roka_id"
     t.boolean "has_plaque"
-    t.integer "registration_year"
+    t.datetime "registration_date"
     t.string "address"
     t.string "reference_point"
-    t.boolean "lives_in_JN"
+    t.boolean "lives_in_jn"
     t.string "phone"
     t.boolean "is_on_whatsapp_group"
-    t.date "birthdate"
+    t.datetime "birthdate"
     t.string "profession"
     t.integer "residents_in_the_house"
     t.string "observations"
+    t.boolean "needs_collect_on_the_house"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "needs_collect_on_the_house"
     t.index ["roka_id"], name: "index_residents_on_roka_id", unique: true
   end
 

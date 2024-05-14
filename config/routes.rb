@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :collects
+  resources :residents
   resources :receipts
   resources :currency_handouts
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
