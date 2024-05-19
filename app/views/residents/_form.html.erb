@@ -1,0 +1,92 @@
+<%= form_with(model: resident) do |form| %>
+  <% if resident.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(resident.errors.count, "error") %> prohibited this resident from being saved:</h2>
+
+      <ul>
+        <% resident.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :situation, style: "display: block" %>
+    <%= form.number_field :situation %>
+  </div>
+
+  <div>
+    <%= form.label :roka_id, style: "display: block" %>
+    <%= form.number_field :roka_id %>
+  </div>
+
+  <div>
+    <%= form.label :has_plaque, style: "display: block" %>
+    <%= form.check_box :has_plaque %>
+  </div>
+
+  <div>
+    <%= form.label :registration_date, style: "display: block" %>
+    <%= form.datetime_field :registration_date %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :reference_point, style: "display: block" %>
+    <%= form.text_field :reference_point %>
+  </div>
+
+  <div>
+    <%= form.label :lives_in_jn, style: "display: block" %>
+    <%= form.check_box :lives_in_jn %>
+  </div>
+
+  <div>
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :is_on_whatsapp_group, style: "display: block" %>
+    <%= form.check_box :is_on_whatsapp_group %>
+  </div>
+
+  <div>
+    <%= form.label :birthdate, style: "display: block" %>
+    <%= form.datetime_field :birthdate %>
+  </div>
+
+  <div>
+    <%= form.label :profession, style: "display: block" %>
+    <%= form.text_field :profession %>
+  </div>
+
+  <div>
+    <%= form.label :residents_in_the_house, style: "display: block" %>
+    <%= form.number_field :residents_in_the_house %>
+  </div>
+
+  <div>
+    <%= form.label :observations, style: "display: block" %>
+    <%= form.text_field :observations %>
+  </div>
+
+  <div>
+    <%= form.label :needs_collect_on_the_house, style: "display: block" %>
+    <%= form.check_box :needs_collect_on_the_house %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

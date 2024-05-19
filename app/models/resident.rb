@@ -1,10 +1,12 @@
 class Resident < ApplicationRecord
-  has_many :collect, dependent: :destroy
+    validates :roka_id, uniqueness: true
 
-  has_many :receipts
-  has_many :currency_handouts, through: :receipts
+    has_many :collect, dependent: :destroy
 
-  def as_json(options = {})
-    super(include: [ :collect, :receipts ] ) 
-  end
+    has_many :receipts
+    has_many :currency_handouts, through: :receipts
+
+    def as_json(options = {})
+        super(include: [ :collect, :receipts ] ) 
+    end
 end
