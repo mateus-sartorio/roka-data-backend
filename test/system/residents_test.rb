@@ -25,7 +25,7 @@ class ResidentsTest < ApplicationSystemTestCase
     fill_in "Phone", with: @resident.phone
     fill_in "Profession", with: @resident.profession
     fill_in "Reference point", with: @resident.reference_point
-    fill_in "Registration date", with: @resident.registration_date
+    fill_in "Registration year", with: @resident.registration_year
     fill_in "Residents in the house", with: @resident.residents_in_the_house
     fill_in "Roka", with: @resident.roka_id
     fill_in "Situation", with: @resident.situation
@@ -50,7 +50,7 @@ class ResidentsTest < ApplicationSystemTestCase
     fill_in "Phone", with: @resident.phone
     fill_in "Profession", with: @resident.profession
     fill_in "Reference point", with: @resident.reference_point
-    fill_in "Registration date", with: @resident.registration_date
+    fill_in "Registration year", with: @resident.registration_year
     fill_in "Residents in the house", with: @resident.residents_in_the_house
     fill_in "Roka", with: @resident.roka_id
     fill_in "Situation", with: @resident.situation

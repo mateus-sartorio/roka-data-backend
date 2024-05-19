@@ -5,13 +5,13 @@ one:
   situation: 1
   roka_id: 1
   has_plaque: false
-  registration_date: 2024-05-14 19:38:50
+  registration_year: 1
   address: MyString
   reference_point: MyString
   lives_in_jn: false
   phone: MyString
   is_on_whatsapp_group: false
-  birthdate: 2024-05-14 19:38:50
+  birthdate: 2024-05-19 00:23:09
   profession: MyString
   residents_in_the_house: 1
   observations: MyString
@@ -22,13 +22,13 @@ two:
   situation: 1
   roka_id: 1
   has_plaque: false
-  registration_date: 2024-05-14 19:38:50
+  registration_year: 1
   address: MyString
   reference_point: MyString
   lives_in_jn: false
   phone: MyString
   is_on_whatsapp_group: false
-  birthdate: 2024-05-14 19:38:50
+  birthdate: 2024-05-19 00:23:09
   profession: MyString
   residents_in_the_house: 1
   observations: MyString

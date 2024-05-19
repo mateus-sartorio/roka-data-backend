@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_18_151427) do
     t.integer "situation"
     t.integer "roka_id"
     t.boolean "has_plaque"
-    t.datetime "registration_date"
+    t.integer "registration_year"
     t.string "address"
     t.string "reference_point"
     t.boolean "lives_in_jn"
