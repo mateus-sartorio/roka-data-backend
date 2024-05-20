@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_18_151427) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_20_012541) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -59,7 +59,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_18_151427) do
     t.boolean "needs_collect_on_the_house"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["roka_id"], name: "index_residents_on_roka_id", unique: true
+    t.index ["roka_id"], name: "index_residents_on_roka_id"
   end
 
   add_foreign_key "collects", "residents"
