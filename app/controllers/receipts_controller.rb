@@ -65,6 +65,6 @@ class ReceiptsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def receipt_params
-      params.require(:receipt).permit(:handout_date, :value, :resident_id, :currency_handout_id)
+      params.require(:receipt).permit(:id, :handout_date, :value, :resident_id, :currency_handout_id)
     end
 end
