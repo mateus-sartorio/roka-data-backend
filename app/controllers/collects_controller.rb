@@ -65,6 +65,6 @@ class CollectsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def collect_params
-      params.require(:collect).permit(:resident_id, :collected_on, :ammount)
+      params.require(:collect).permit(:id, :resident_id, :collected_on, :ammount)
     end
 end
