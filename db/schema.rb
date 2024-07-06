@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_07_06_205131) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_06_222036) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -46,7 +46,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_06_205131) do
     t.integer "situation"
     t.integer "roka_id"
     t.boolean "has_plaque"
-    t.integer "registration_year"
     t.string "address"
     t.string "reference_point"
     t.boolean "lives_in_jn"
