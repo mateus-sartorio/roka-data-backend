@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_06_04_000259) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_06_200914) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -60,6 +60,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_04_000259) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "shift_for_collection_on_the_house"
+    t.date "registration_date"
     t.index ["roka_id"], name: "index_residents_on_roka_id"
   end
 
